@@ -6,7 +6,7 @@ import uranus from "../assets/uranus_image.png";
 export const HeroSection = () => {
   return (
     <section
-      id="home"
+      id="hero"
       className="relative flex flex-col-reverse md:flex-row items-center justify-center min-h-screen md:min-h-[90vh] py-10 md:py-0 px-6 md:px-12"
 
     >
