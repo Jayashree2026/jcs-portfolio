@@ -1,0 +1,74 @@
+.galaxy-wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  filter: drop-shadow(0 0 40px rgba(147, 112, 255, 0.8));
+}
+
+.galaxy-spin {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  animation: galaxyRotate 60s linear infinite;
+  transition: filter 0.5s ease, transform 0.5s ease;
+  filter: brightness(1.3) saturate(1.4) drop-shadow(0 0 60px rgba(160, 100, 255, 0.6));
+}
+
+/* stop rotation on hover */
+.galaxy-wrapper:hover .galaxy-spin {
+  animation-play-state: paused;
+  transform: scale(1.05);
+  filter: brightness(1.6) drop-shadow(0 0 80px rgba(200, 160, 255, 0.9));
+}
+
+/* rotation animation */
+@keyframes galaxyRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.saturn-wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  filter: drop-shadow(0 0 40px rgba(233, 230, 17, 0.918));
+}
+
+.saturn-spin {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  animation: saturnRotate 60s linear infinite;
+  transition: filter 0.5s ease, transform 0.5s ease;
+  filter: brightness(1.3) saturate(1.4) drop-shadow(0 0 60px rgba(238, 235, 13, 0.862));
+}
+
+/* stop rotation on hover */
+.saturn-wrapper:hover .saturn-spin {
+  animation-play-state: paused;
+  transform: scale(1.05);
+  filter: brightness(1.6) drop-shadow(0 0 80px rgba(252, 248, 13, 0.9));
+}
+
+/* rotation animation */
+@keyframes saturnRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
